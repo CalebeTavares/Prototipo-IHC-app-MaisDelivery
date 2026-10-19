@@ -1,0 +1,515 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f4f5f7">
+    <meta name="description" content="Mais+Delivery - Informações da Big Variedades">
+    <title>Mais+Delivery | Big Variedades</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="stage">
+
+        <section class="phone" aria-label="Aplicativo Mais+Delivery">
+            <div class="phone-frame">
+
+                <div class="screen">
+
+
+                    <div class="statusbar">
+                        <span>12:17</span>
+                        <span class="status-right">● ▴ ▰ 69%</span>
+                    </div>
+
+
+                    <header class="app-header">
+
+                        <button class="icon-btn" id="backBtn" aria-label="Voltar">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M19 12H5M12 19l-7-7 7-7"/>
+                            </svg>
+                        </button>
+
+                        <a class="wordmark" href="#inicio">
+                            Mais<span>+</span>Delivery
+                            <small>ENTREGA PERTO DE VOCÊ</small>
+                        </a>
+
+                        <button class="icon-btn" id="searchBtn" aria-label="Pesquisar">
+                            <svg viewBox="0 0 24 24">
+                                <circle cx="10.8" cy="10.8" r="6.8"/>
+                                <path d="m16 16 4.3 4.3"/>
+                            </svg>
+                        </button>
+
+                    </header>
+
+
+                    <div class="search-wrap" id="searchWrap" hidden>
+
+                        <label for="storeSearch">Pesquisar nesta loja</label>
+
+                        <div class="search-field">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="10.8" cy="10.8" r="6.8"/>
+                                <path d="m16 16 4.3 4.3"/>
+                            </svg>
+
+                            <input
+                                type="search"
+                                id="storeSearch"
+                                placeholder="Buscar informação..."
+                                autocomplete="off"
+                            >
+
+                            <button id="closeSearch" aria-label="Fechar pesquisa">
+                                ×
+                            </button>
+                        </div>
+
+                        <p class="search-hint" id="searchHint">
+                            Digite uma palavra, como “horário” ou “endereço”.
+                        </p>
+
+                    </div>
+
+                    <div class="page-content" id="pageContent">
+
+
+                        <section class="store-card" id="inicio">
+
+                            <div class="store-card-top">
+
+                                <div class="store-logo" aria-label="Logotipo Big Variedades">
+                                    <svg viewBox="0 0 48 48" aria-hidden="true">
+                                        <rect x="5" y="5" width="17" height="17" rx="2"/>
+                                        <rect x="26" y="5" width="17" height="17" rx="2"/>
+                                        <rect x="5" y="26" width="17" height="17" rx="2"/>
+                                        <rect x="26" y="26" width="17" height="17" rx="2"/>
+                                    </svg>
+                                    <b>BIG</b>
+                                    <small>VARIEDADES</small>
+                                </div>
+
+                                <div class="store-main">
+
+                                    <div class="name-row">
+                                        <div>
+                                            <p class="overline">LOJA DE VARIEDADES</p>
+                                            <h1 id="storeName">Big Variedades</h1>
+                                        </div>
+
+                                        <button
+                                            class="favorite-btn"
+                                            id="favoriteBtn"
+                                            aria-pressed="false"
+                                            aria-label="Adicionar Big Variedades aos favoritos"
+                                        >
+                                            <svg viewBox="0 0 24 24">
+                                                <path d="M20.8 4.8a5.4 5.4 0 0 0-7.6 0L12 6l-1.2-1.2a5.4 5.4 0 0 0-7.6 7.6L12 21l8.8-8.6a5.4 5.4 0 0 0 0-7.6Z"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <span class="open-pill">
+                                        <span></span>
+                                        Aberto
+                                    </span>
+
+                                    <p class="category">Variedades</p>
+
+                                </div>
+                            </div>
+
+
+                            <div class="store-facts">
+
+                                <div class="fact">
+                                    <span class="fact-icon">
+                                        <svg viewBox="0 0 24 24">
+                                            <circle cx="12" cy="12" r="9"/>
+                                            <path d="M12 7v5l3 2"/>
+                                        </svg>
+                                    </span>
+
+                                    <span>
+                                        <b>10–15 min</b>
+                                        <small>Tempo estimado</small>
+                                    </span>
+                                </div>
+
+                                <div class="fact">
+                                    <span class="fact-icon">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M5 16h14l-1-6H6l-1 6Z"/>
+                                            <path d="M8 10V7h8v3M8 16v2m8-2v2"/>
+                                        </svg>
+                                    </span>
+
+                                    <span>
+                                        <b>R$ 5,99 a 9,99</b>
+                                        <small>Taxa de entrega</small>
+                                    </span>
+                                </div>
+
+                            </div>
+
+                            <p class="data-note">
+                                Tempo e taxa podem variar conforme o endereço.
+                            </p>
+
+                        </section>
+
+                        <nav class="tabs" aria-label="Seções da loja" role="tablist">
+
+                            <button
+                                class="tab"
+                                role="tab"
+                                id="tab-products"
+                                aria-controls="panel-products"
+                                aria-selected="false"
+                                data-panel="products"
+                                tabindex="-1"
+                            >
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/>
+                                </svg>
+                                <span>Produtos</span>
+                            </button>
+
+                            <button
+                                class="tab"
+                                role="tab"
+                                id="tab-reviews"
+                                aria-controls="panel-reviews"
+                                aria-selected="false"
+                                data-panel="reviews"
+                                tabindex="-1"
+                            >
+                                <svg viewBox="0 0 24 24">
+                                    <path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9L12 3Z"/>
+                                </svg>
+                                <span>Avaliações</span>
+                            </button>
+
+                            <button
+                                class="tab active"
+                                role="tab"
+                                id="tab-info"
+                                aria-controls="panel-info"
+                                aria-selected="true"
+                                data-panel="info"
+                            >
+                                <svg viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="9"/>
+                                    <path d="M12 11v5M12 7h.01"/>
+                                </svg>
+                                <span>Informações</span>
+                            </button>
+
+                        </nav>
+
+
+                        <section
+                            class="tab-panel"
+                            id="panel-info"
+                            role="tabpanel"
+                            aria-labelledby="tab-info"
+                        >
+
+                            <article
+                                class="info-card searchable"
+                                data-search="endereço localização avenida senador hermenegildo centro igreja cristã evangélica mapa"
+                            >
+
+                                <div class="card-heading">
+                                    <span class="icon-disc">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/>
+                                            <circle cx="12" cy="10" r="2.5"/>
+                                        </svg>
+                                    </span>
+
+                                    <h2>Endereço</h2>
+                                </div>
+
+                                <p class="address">
+                                    Av. Senador Hermenegildo, 474, ao lado da Igreja Cristã Evangélica, Centro.
+                                </p>
+
+                                <button class="wide-action" id="mapBtn">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Z"/>
+                                        <path d="M9 3v15m6-12v15"/>
+                                    </svg>
+
+                                    <span>Ver rota no Google Maps</span>
+
+                                    <svg class="chevron" viewBox="0 0 24 24">
+                                        <path d="m9 18 6-6-6-6"/>
+                                    </svg>
+                                </button>
+
+                                <button class="copy-action" id="copyAddress">
+                                    <svg viewBox="0 0 24 24">
+                                        <rect x="8" y="8" width="12" height="12" rx="2"/>
+                                        <path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/>
+                                    </svg>
+                                    Copiar endereço
+                                </button>
+
+                            </article>
+
+                            <article
+                                class="info-card searchable"
+                                data-search="sobre loja produtos pijamas eletrônicos variedades"
+                            >
+
+                                <div class="card-heading">
+                                    <span class="icon-disc">
+                                        <svg viewBox="0 0 24 24">
+                                            <circle cx="12" cy="12" r="9"/>
+                                            <path d="M12 11v5M12 7h.01"/>
+                                        </svg>
+                                    </span>
+
+                                    <h2>Sobre a loja</h2>
+                                </div>
+
+                                <p>Pijamas, eletrônicos e muito mais.</p>
+
+                            </article>
+
+
+                            <article
+                                class="info-card searchable"
+                                data-search="horário funcionamento domingo segunda terça quarta quinta sexta sábado fechado 08 18 13"
+                            >
+
+                                <div class="card-heading">
+                                    <span class="icon-disc">
+                                        <svg viewBox="0 0 24 24">
+                                            <circle cx="12" cy="12" r="9"/>
+                                            <path d="M12 7v5l3 2"/>
+                                        </svg>
+                                    </span>
+
+                                    <h2>Horários de funcionamento</h2>
+                                </div>
+
+                                <div class="hours">
+
+                                    <div>
+                                        <span>Domingo</span>
+                                        <b class="closed">Fechado</b>
+                                    </div>
+
+                                    <div>
+                                        <span>Segunda-feira</span>
+                                        <time>08:00–18:00</time>
+                                    </div>
+
+                                    <div>
+                                        <span>Terça-feira</span>
+                                        <time>08:00–18:00</time>
+                                    </div>
+
+                                    <div>
+                                        <span>Quarta-feira</span>
+                                        <time>08:00–18:00</time>
+                                    </div>
+
+                                    <div>
+                                        <span>Quinta-feira</span>
+                                        <time>08:00–18:00</time>
+                                    </div>
+
+                                    <div>
+                                        <span>Sexta-feira</span>
+                                        <time>08:00–18:00</time>
+                                    </div>
+
+                                    <div>
+                                        <span>Sábado</span>
+                                        <time>08:00–13:00</time>
+                                    </div>
+
+                                </div>
+
+                                <p class="subtle-note">
+                                    Os horários podem sofrer alterações em feriados.
+                                </p>
+
+                            </article>
+
+                            <article
+                                class="info-card searchable"
+                                data-search="pagamento formas de pagamento pix dinheiro cartão crédito débito"
+                            >
+
+                                <button
+                                    class="accordion-trigger"
+                                    id="paymentToggle"
+                                    aria-expanded="false"
+                                    aria-controls="paymentDetails"
+                                >
+
+                                    <span class="card-heading">
+
+                                        <span class="icon-disc">
+                                            <svg viewBox="0 0 24 24">
+                                                <rect x="3" y="5" width="18" height="14" rx="2"/>
+                                                <path d="M3 10h18m-14 5h3"/>
+                                            </svg>
+                                        </span>
+
+                                        <span class="heading-text">
+                                            <h2>Formas de pagamento</h2>
+                                            <small>Consulte as opções disponíveis</small>
+                                        </span>
+
+                                    </span>
+
+                                    <svg class="accordion-chevron" viewBox="0 0 24 24">
+                                        <path d="m6 9 6 6 6-6"/>
+                                    </svg>
+
+                                </button>
+
+                                <div
+                                    id="paymentDetails"
+                                    class="payment-details"
+                                    hidden
+                                >
+                                    <p>
+                                        As formas de pagamento não foram confirmadas nesta tela.
+                                        Consulte a loja antes de finalizar seu pedido.
+                                    </p>
+                                </div>
+
+                            </article>
+
+                        </section>
+
+                        <section
+                            class="tab-panel alternate-panel"
+                            id="panel-products"
+                            role="tabpanel"
+                            aria-labelledby="tab-products"
+                            hidden
+                        >
+
+                            <div class="panel-symbol">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/>
+                                </svg>
+                            </div>
+
+                            <h2>Produtos da Big Variedades</h2>
+
+                            <p>
+                                Os produtos ainda não estão conectados a este protótipo.
+                            </p>
+
+                            <button class="primary-btn" id="productsInfo">
+                                Entendi
+                            </button>
+
+                        </section>
+
+
+                        <section
+                            class="tab-panel alternate-panel"
+                            id="panel-reviews"
+                            role="tabpanel"
+                            aria-labelledby="tab-reviews"
+                            hidden
+                        >
+
+                            <div class="panel-symbol">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9L12 3Z"/>
+                                </svg>
+                            </div>
+
+                            <h2>Avaliações</h2>
+
+                            <p>
+                                Não há avaliações confirmadas nesta tela.
+                                Nenhuma nota foi estimada ou inventada.
+                            </p>
+
+                            <button class="primary-btn" id="reviewsInfo">
+                                Entendi
+                            </button>
+
+                        </section>
+
+                        <p class="toast" id="toast" role="status" aria-live="polite"></p>
+
+                    </div>
+
+
+                    <nav class="bottom-nav" aria-label="Navegação principal">
+
+                        <button
+                            class="nav-item selected"
+                            data-nav="Início"
+                            aria-current="page"
+                        >
+                            <svg viewBox="0 0 24 24">
+                                <path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1V10Z"/>
+                            </svg>
+                            <span>Início</span>
+                        </button>
+
+                        <button class="nav-item" data-nav="Promoções">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M20 13 11 22 2 13V4h9l9 9Z"/>
+                                <circle cx="7" cy="9" r="1"/>
+                            </svg>
+                            <span>Promoções</span>
+                        </button>
+
+                        <button class="nav-item" data-nav="Fidelidade">
+                            <svg viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="9"/>
+                                <path d="M15 8.5c-.7-.7-1.6-1-3-1-1.5 0-2.5.7-2.5 1.8 0 3 6 1.2 6 4.4 0 1.3-1.2 2.2-3 2.2-1.3 0-2.5-.4-3.4-1.2M12 5.5v13"/>
+                            </svg>
+                            <span>Fidelidade</span>
+                        </button>
+
+                        <button class="nav-item" data-nav="Pedidos">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M5 8h14l2 12H3L5 8Z"/>
+                                <path d="M9 8V6a3 3 0 0 1 6 0v2m-3 4v4"/>
+                            </svg>
+                            <span>Pedidos</span>
+                        </button>
+
+                    </nav>
+
+
+                    <div class="home-indicator" aria-hidden="true">
+                        <span></span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <p class="stage-caption">
+            Protótipo interativo • Mais+Delivery
+        </p>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
